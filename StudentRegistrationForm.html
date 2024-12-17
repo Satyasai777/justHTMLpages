@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD><TITLE>Forms</title>
+<style>
+body{
+width:100vw;
+height:100vh;
+display:grid;
+justify-content:center;
+color:rgba(31,87,100);
+}
+.main{
+width:100%;
+height:100vh;
+}
+
+.container{
+padding:15px;
+width:450px;
+height:730px;
+background-color:azure;
+border:none;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+display:grid;
+}
+
+.type1{
+display:grid;
+margin-top:8px;
+margin-bottom:8px;
+}
+
+.type2{
+width:40%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.type3{
+width:100%;
+height:25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+button{
+width:200px;
+height:30px;
+border:none;
+border-radius:5px;
+}
+
+.btn1{
+background:lightgreen;
+
+}
+.btn1:hover{
+background:darkgreen;
+}
+.btn2{
+background:red;
+}
+.btn2:hover{
+background:darkred;
+}
+
+
+</style>
+</head>
+<body>
+<div class="main">
+<h1>Student Registration Form</h1>
+<form>
+<div class="container">
+<div class="type1">
+<label for="fname">Full Name :</label>
+<input type="text" id="fname" placeholder="Enter Your Name" />
+</div>
+
+<div class="type1">
+<label for="age">Age :</label>
+<input type="text" id="age" placeholder="Enter Your Age"/>
+</div>
+
+<div>
+<h4>Gender : </h4>
+<div class="type2">
+<label for="gender1">Male :</label>
+<input  type="radio" name="gender" id="gender1" />
+</div>
+</div>
+
+<div class="type2">
+<label for="gender2">Female :</label>
+<input  type="radio" name="gender" id="gender2" />
+</div>
+
+<div class="type2">
+<label for="gender2">Others :</label>
+<input  type="radio" name="gender" id="gender2" />
+</div>
+
+<div class="type1">
+<label for="dep">Department :</label>
+<select name="department" id="dep">
+  <option value="it">IT</option>
+  <option value="cse">CSE</option>
+  <option value="ece">ECE</option>
+<option value="mech">MECH</option>
+</select>
+</div>
+
+<div>
+<h4>Language Proficiency : </h4>
+<div class="type2">
+<label for="c">C :</label>
+<input  type="checkbox" name="gender" id="c" />
+</div>
+</div>
+
+<div class="type2">
+<label for="c++">C++ :</label>
+<input  type="checkbox" name="gender" id="c++" />
+</div>
+
+<div class="type2">
+<label for="c">Java :</label>
+<input  type="checkbox" name="gender" id="java" />
+</div>
+
+<div class="type2">
+<label for="c">Python :</label>
+<input  type="checkbox" name="gender" id="python" />
+</div>
+
+<div class="type1">
+<label for="profile">Profile Picture :</label>
+<input type="file" id="profile" placeholder="Enter Your Age"/>
+</div>
+
+
+<h4>Experience Level : </h4>
+<div class="type2">
+<label for="f">Fresher :</label>
+<input  type="radio" name="experience" id="f" />
+</div>
+
+<div class="type2">
+<label for="exp">Experienced :</label>
+<input  type="radio" name="experience" id="exp" />
+</div>
+
+<div class="type1">
+<label for="email">Email :</label>
+<input type="email" id="email" placeholder="Enter Your Email" />
+</div>
+
+<div class="type1">
+<label for="address">Address :</label>
+<textarea id="address" placeholder="Enter Your Address" ></textarea>
+</div>
+
+<div class="type3">
+<button class="btn1">Submit</button>
+<button class="btn2">Reset</button>
+</div>
+
+</div>
+</form>
+</div>
+</body>
+</html>
